@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arjun &amp; Priya — Forever Begins</title>
+  <meta name="description" content="Join us to celebrate the wedding of Arjun & Priya — an evening of love, light, and forever." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Montserrat:wght@200;300;400;500&family=Great+Vibes&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+
+    
+
+  <!-- ░░ CUSTOM CURSOR ░░ -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- ░░ LOADING SCREEN ░░ -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <div class="loader-ring"></div>
+      <div class="loader-names">
+        <span class="loader-a">A</span>
+        <span class="loader-amp">&amp;</span>
+        <span class="loader-p">P</span>
+      </div>
+      <p class="loader-tag">Loading your invitation…</p>
+    </div>
+  </div>
+
+  <!-- ░░ PARTICLES CANVAS ░░ -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- ░░ NAV ░░ -->
+  <nav class="nav" id="mainNav">
+    <div class="nav-logo">A &amp; P</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#story">Our Story</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#rsvp">RSVP</a></li>
+      <li><a href="#location">Location</a></li>
+    </ul>
+    <button class="nav-hamburger" id="navHamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ░░ HERO SECTION ░░ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-overlay"></div>
+      <div class="hero-vignette"></div>
+    </div>
+
+    <div class="hero-particles"></div>
+    <div class="light-leak light-leak--1"></div>
+    <div class="light-leak light-leak--2"></div>
+    <div class="light-leak light-leak--3"></div>
+
+    <div class="hero-content">
+      <p class="hero-pretext reveal-up">~ Save the Date ~</p>
+      <h1 class="hero-names reveal-up delay-1">
+        <span class="name-a">Arjun</span>
+        <span class="hero-ampersand">&amp;</span>
+        <span class="name-b">Priya</span>
+      </h1>
+      <div class="hero-divider reveal-up delay-2">
+        <span class="divider-line"></span>
+        <span class="divider-diamond">◆</span>
+        <span class="divider-line"></span>
+      </div>
+      <p class="hero-date reveal-up delay-3">Saturday, the Twenty-First of February, 2026</p>
+      <p class="hero-venue reveal-up delay-4">The Grand Leela Palace · Udaipur, India</p>
+      <a href="#rsvp" class="hero-btn reveal-up delay-5">Kindly RSVP</a>
+    </div>
+
+    <div class="hero-scroll-indicator" id="scrollIndicator">
+      <span class="scroll-text">Scroll</span>
+      <div class="scroll-arrow">
+        <div class="scroll-arrow-inner"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ SECTION SEPARATOR ░░ -->
+  <div class="separator">
+    <div class="separator-line"></div>
+    <svg class="separator-ornament" viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 20 Q30 5 60 20 Q90 35 120 20" stroke="var(--gold)" stroke-width="0.8" fill="none" opacity="0.7"/>
+      <circle cx="60" cy="20" r="3" fill="var(--gold)" opacity="0.9"/>
+      <circle cx="20" cy="20" r="1.5" fill="var(--gold)" opacity="0.5"/>
+      <circle cx="100" cy="20" r="1.5" fill="var(--gold)" opacity="0.5"/>
+    </svg>
+    <div class="separator-line"></div>
+  </div>
+
+  <!-- ░░ LOVE STORY SECTION ░░ -->
+  <section class="story" id="story">
+    <div class="section-header reveal-up">
+      <p class="section-pre">How it began</p>
+      <h2 class="section-title">Our Love Story</h2>
+      <p class="section-subtitle">Every great love story is an adventure — ours is no different.</p>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-spine"></div>
+
+      <div class="timeline-item timeline-item--left reveal-left">
+        <div class="timeline-card">
+          <div class="timeline-card-inner">
+            <span class="timeline-year">2019</span>
+            <h3 class="timeline-heading">First Glance</h3>
+            <p class="timeline-text">At a rooftop gathering in Mumbai, their eyes met across the crowd. A smile. A heartbeat. The universe quietly took note.</p>
+          </div>
+          <div class="timeline-img-wrap">
+            <div class="timeline-img timeline-img--1"></div>
+          </div>
+        </div>
+        <div class="timeline-dot">
+          <div class="timeline-dot-inner"></div>
+        </div>
+      </div>
+
+      <div class="timeline-item timeline-item--right reveal-right">
+        <div class="timeline-dot">
+          <div class="timeline-dot-inner"></div>
+        </div>
+        <div class="timeline-card">
+          <div class="timeline-card-inner">
+            <span class="timeline-year">2020</span>
+            <h3 class="timeline-heading">First Date</h3>
+            <p class="timeline-text">A candlelit dinner by the sea. Conversations that stretched past midnight. They knew then — this was the beginning of everything.</p>
+          </div>
+          <div class="timeline-img-wrap">
+            <div class="timeline-img timeline-img--2"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item timeline-item--left reveal-left">
+        <div class="timeline-card">
+          <div class="timeline-card-inner">
+            <span class="timeline-year">2022</span>
+            <h3 class="timeline-heading">Adventures Together</h3>
+            <p class="timeline-text">From the misty hills of Coorg to the golden deserts of Jaisalmer — their love grew with every mile, every laugh, every shared silence.</p>
+          </div>
+          <div class="timeline-img-wrap">
+            <div class="timeline-img timeline-img--3"></div>
+          </div>
+        </div>
+        <div class="timeline-dot">
+          <div class="timeline-dot-inner"></div>
+        </div>
+      </div>
+
+      <div class="timeline-item timeline-item--right reveal-right">
+        <div class="timeline-dot">
+          <div class="timeline-dot-inner"></div>
+        </div>
+        <div class="timeline-card">
+          <div class="timeline-card-inner">
+            <span class="timeline-year">2025</span>
+            <h3 class="timeline-heading">He Asked, She Said Yes</h3>
+            <p class="timeline-text">Under a sky full of stars at the edge of Lake Pichola, Arjun got on one knee. With trembling hands and a full heart, Priya said forever.</p>
+          </div>
+          <div class="timeline-img-wrap">
+            <div class="timeline-img timeline-img--4"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ SEPARATOR ░░ -->
+  <div class="separator separator--gold">
+    <div class="separator-line"></div>
+    <svg class="separator-ornament" viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 20 Q30 5 60 20 Q90 35 120 20" stroke="var(--gold)" stroke-width="0.8" fill="none" opacity="0.7"/>
+      <circle cx="60" cy="20" r="3" fill="var(--gold)" opacity="0.9"/>
+    </svg>
+    <div class="separator-line"></div>
+  </div>
+
+  <!-- ░░ COUNTDOWN SECTION ░░ -->
+  <section class="countdown" id="countdown">
+    <div class="countdown-bg"></div>
+    <div class="countdown-overlay"></div>
+    <div class="countdown-content">
+      <div class="section-header reveal-up">
+        <p class="section-pre" style="color:var(--gold-light)">The big day</p>
+        <h2 class="section-title" style="color:var(--ivory)">Counting Every Heartbeat</h2>
+      </div>
+      <div class="countdown-grid reveal-up delay-1">
+        <div class="countdown-unit">
+          <div class="countdown-num" id="cdDays">00</div>
+          <div class="countdown-label">Days</div>
+        </div>
+        <div class="countdown-sep">:</div>
+        <div class="countdown-unit">
+          <div class="countdown-num" id="cdHours">00</div>
+          <div class="countdown-label">Hours</div>
+        </div>
+        <div class="countdown-sep">:</div>
+        <div class="countdown-unit">
+          <div class="countdown-num" id="cdMins">00</div>
+          <div class="countdown-label">Minutes</div>
+        </div>
+        <div class="countdown-sep">:</div>
+        <div class="countdown-unit">
+          <div class="countdown-num" id="cdSecs">00</div>
+          <div class="countdown-label">Seconds</div>
+        </div>
+      </div>
+      <p class="countdown-quote reveal-up delay-2">"Two souls, one destiny."</p>
+    </div>
+  </section>
+
+  <!-- ░░ SEPARATOR ░░ -->
+  <div class="separator">
+    <div class="separator-line"></div>
+    <svg class="separator-ornament" viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 20 Q30 5 60 20 Q90 35 120 20" stroke="var(--gold)" stroke-width="0.8" fill="none" opacity="0.7"/>
+      <circle cx="60" cy="20" r="3" fill="var(--gold)" opacity="0.9"/>
+    </svg>
+    <div class="separator-line"></div>
+  </div>
+
+  <!-- ░░ EVENT DETAILS ░░ -->
+  <section class="events" id="events">
+    <div class="section-header reveal-up">
+      <p class="section-pre">You are invited</p>
+      <h2 class="section-title">Celebrations</h2>
+      <p class="section-subtitle">Join us for each cherished moment as we begin forever.</p>
+    </div>
+
+    <div class="events-grid">
+      <div class="event-card reveal-up delay-1">
+        <div class="event-card-icon">
+          <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 5 L20 35 M5 20 L35 20" stroke="var(--gold)" stroke-width="1" fill="none" opacity="0.5"/>
+            <circle cx="20" cy="20" r="12" stroke="var(--gold)" stroke-width="0.8" fill="none"/>
+            <circle cx="20" cy="20" r="3" fill="var(--gold)" opacity="0.7"/>
+          </svg>
+        </div>
+        <span class="event-tag">Day One</span>
+        <h3 class="event-name">Mehendi &amp; Sangeet</h3>
+        <div class="event-details-list">
+          <div class="event-detail"><span class="event-detail-icon">◈</span><span>Friday, 20 February 2026</span></div>
+          <div class="event-detail"><span class="event-detail-icon">◈</span><span>4:00 PM Onwards</span></div>
+          <div class="event-detail"><span class="event-detail-icon">◈</span><span>The Lily Lawn, Grand Leela Palace</span></div>
+          <div class="event-detail"><span class="event-detail-icon">◈</span><span>Dress Code: Festive Pastels</span></div>
+        </div>
+      </div>
+
+      <div class="event-card event-card--featured reveal-up delay-2">
+        <div class="event-card-glow"></div>
+        <div class="event-card-icon">
+          <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 8 L22.5 15 L30 15 L24 19.5 L26.5 27 L20 22.5 L13.5 27 L16 19.5 L10 15 L17.5 15 Z" stroke="var(--gold)" stroke-width="0.8" fill="none"/>
+            <circle cx="20" cy="20" r="15" stroke="var(--gold)" stroke-width="0.5" fill="none" stroke-dasharray="3 3"/>
+          </svg>
+        </div>
+        <span class="event-tag event-tag--gold">Main Event</span>
+        <h3 class="event-name">Wedding Ceremony</h3>
+        <div class="event-details-list">
+          <div class="event-detail"><span class="event-detail-icon">◈</span><span>Saturday, 21 February 2026</span></div>
+          <div class="event-detail"><span class="event-detail-icon">◈</span><span>10:30 AM — Auspicious Muhurat</span></div>
+          <div class="event-detail"><span class="event-detail-icon">◈</span><span>Grand Ballroom, The Leela Palace</span></div>
+          <div class="event-detail"><span class="event-detail-icon">◈</span><span>Dress Code: Formal Indian Ethnic</span></div>
+        </div>
+      </div>
+
+      <div class="event-card reveal-up delay-3">
+        <div class="event-card-icon">
+          <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 28 Q20 10 30 28" stroke="var(--gold)" stroke-width="0.8" fill="none"/>
+            <circle cx="20" cy="20" r="12" stroke="var(--gold)" stroke-width="0.8" fill="none"/>
+            <path d="M15 22 Q20 26 25 22" stroke="var(--gold)" stroke-width="0.8" fill="none"/>
+          </svg>
+        </div>
+        <span class="event-tag">Evening</span>
+        <h3 class="event-name">Reception &amp; Dinner</h3>
+        <div class="event-details-list">
+          <div class="event-detail"><span class="event-detail-icon">◈</span><span>Saturday, 21 February 2026</span></div>
+          <div class="event-detail"><span class="event-detail-icon">◈</span><span>7:00 PM — Midnight</span></div>
+          <div class="event-detail"><span class="event-detail-icon">◈</span><span>The Terrace, Grand Leela Palace</span></div>
+          <div class="event-detail"><span class="event-detail-icon">◈</span><span>Dress Code: Black Tie / Cocktail</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ SEPARATOR ░░ -->
+  <div class="separator">
+    <div class="separator-line"></div>
+    <svg class="separator-ornament" viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 20 Q30 5 60 20 Q90 35 120 20" stroke="var(--gold)" stroke-width="0.8" fill="none" opacity="0.7"/>
+      <circle cx="60" cy="20" r="3" fill="var(--gold)" opacity="0.9"/>
+    </svg>
+    <div class="separator-line"></div>
+  </div>
+
+  <!-- ░░ GALLERY SECTION ░░ -->
+  <section class="gallery" id="gallery">
+    <div class="section-header reveal-up">
+      <p class="section-pre">Moments captured</p>
+      <h2 class="section-title">Our Gallery</h2>
+      <p class="section-subtitle">Glimpses of a love story written in light and laughter.</p>
+    </div>
+
+    <div class="gallery-grid reveal-up delay-1">
+      <div class="gallery-item gallery-item--tall" data-index="0">
+        <div class="gallery-img gallery-img--1"></div>
+        <div class="gallery-overlay">
+          <span class="gallery-zoom">✦</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-index="1">
+        <div class="gallery-img gallery-img--2"></div>
+        <div class="gallery-overlay"><span class="gallery-zoom">✦</span></div>
+      </div>
+      <div class="gallery-item" data-index="2">
+        <div class="gallery-img gallery-img--3"></div>
+        <div class="gallery-overlay"><span class="gallery-zoom">✦</span></div>
+      </div>
+      <div class="gallery-item gallery-item--wide" data-index="3">
+        <div class="gallery-img gallery-img--4"></div>
+        <div class="gallery-overlay"><span class="gallery-zoom">✦</span></div>
+      </div>
+      <div class="gallery-item" data-index="4">
+        <div class="gallery-img gallery-img--5"></div>
+        <div class="gallery-overlay"><span class="gallery-zoom">✦</span></div>
+      </div>
+      <div class="gallery-item gallery-item--tall" data-index="5">
+        <div class="gallery-img gallery-img--6"></div>
+        <div class="gallery-overlay"><span class="gallery-zoom">✦</span></div>
+      </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close">✕</button>
+      <button class="lightbox-prev" id="lightboxPrev" aria-label="Previous">‹</button>
+      <button class="lightbox-next" id="lightboxNext" aria-label="Next">›</button>
+      <div class="lightbox-img-wrap" id="lightboxImgWrap">
+        <div class="lightbox-img" id="lightboxImg"></div>
+      </div>
+      <p class="lightbox-caption" id="lightboxCaption"></p>
+    </div>
+  </section>
+
+  <!-- ░░ SEPARATOR ░░ -->
+  <div class="separator">
+    <div class="separator-line"></div>
+    <svg class="separator-ornament" viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 20 Q30 5 60 20 Q90 35 120 20" stroke="var(--gold)" stroke-width="0.8" fill="none" opacity="0.7"/>
+      <circle cx="60" cy="20" r="3" fill="var(--gold)" opacity="0.9"/>
+    </svg>
+    <div class="separator-line"></div>
+  </div>
+
+  <!-- ░░ RSVP SECTION ░░ -->
+  <section class="rsvp" id="rsvp">
+    <div class="rsvp-bg"></div>
+    <div class="rsvp-overlay"></div>
+    <div class="rsvp-container">
+      <div class="section-header reveal-up">
+        <p class="section-pre">Join the celebration</p>
+        <h2 class="section-title">Kindly RSVP</h2>
+        <p class="section-subtitle">Please let us know by January 15, 2026 so we can celebrate together.</p>
+      </div>
+
+      <div class="rsvp-form-wrap reveal-up delay-1" id="rsvpFormWrap">
+        <form class="rsvp-form" id="rsvpForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="guestName">Full Name</label>
+              <input class="form-input" type="text" id="guestName" name="guestName" placeholder="Your beautiful name" required />
+              <span class="form-underline"></span>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="guestEmail">Email Address</label>
+              <input class="form-input" type="email" id="guestEmail" name="guestEmail" placeholder="your@email.com" required />
+              <span class="form-underline"></span>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="guestCount">Number of Guests</label>
+              <select class="form-input form-select" id="guestCount" name="guestCount">
+                <option value="1">Just me (1)</option>
+                <option value="2">2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+                <option value="5+">5 or more</option>
+              </select>
+              <span class="form-underline"></span>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Will you attend?</label>
+              <div class="radio-group">
+                <label class="radio-label">
+                  <input type="radio" name="attendance" value="yes" checked />
+                  <span class="radio-custom"></span>
+                  Joyfully Accept
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="attendance" value="no" />
+                  <span class="radio-custom"></span>
+                  Regretfully Decline
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group form-group--full">
+            <label class="form-label" for="guestWishes">Your Wishes &amp; Message</label>
+            <textarea class="form-input form-textarea" id="guestWishes" name="guestWishes" placeholder="Share your warm wishes for the couple…" rows="4"></textarea>
+            <span class="form-underline"></span>
+          </div>
+          <div class="form-submit-wrap">
+            <button type="submit" class="form-submit" id="rsvpSubmit">
+              <span class="submit-text">Send with Love</span>
+              <span class="submit-icon">♡</span>
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Success Card -->
+      <div class="rsvp-success" id="rsvpSuccess">
+        <div class="success-icon">♡</div>
+        <h3 class="success-title">With Love &amp; Gratitude</h3>
+        <p class="success-text">Thank you, <span id="successName">dear friend</span>. Your presence means the world to us. We can't wait to celebrate with you!</p>
+        <p class="success-sub">~ Arjun &amp; Priya ~</p>
+        <div class="success-confetti" id="successConfetti"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ LOCATION SECTION ░░ -->
+  <section class="location" id="location">
+    <div class="section-header reveal-up">
+      <p class="section-pre">Find your way</p>
+      <h2 class="section-title">Venue &amp; Location</h2>
+    </div>
+
+    <div class="location-container">
+      <div class="location-card reveal-left">
+        <div class="location-card-inner">
+          <div class="location-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="var(--gold)" stroke-width="1.2">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+              <circle cx="12" cy="9" r="2.5"/>
+            </svg>
+          </div>
+          <h3 class="location-name">The Grand Leela Palace</h3>
+          <p class="location-address">Lake Pichola Road, Udaipur,<br />Rajasthan 313001, India</p>
+          <div class="location-details">
+            <div class="location-detail"><span>✦</span> 5-Star Heritage Palace</div>
+            <div class="location-detail"><span>✦</span> Valet Parking Available</div>
+            <div class="location-detail"><span>✦</span> Accessible Venue</div>
+            <div class="location-detail"><span>✦</span> 30 min from Udaipur Airport</div>
+          </div>
+          <a class="location-btn" href="https://maps.google.com/?q=The+Leela+Palace+Udaipur" target="_blank" rel="noopener">
+            Open in Google Maps ↗
+          </a>
+        </div>
+      </div>
+
+      <div class="location-map-wrap reveal-right">
+        <div class="location-map-frame">
+          <iframe
+            title="Venue Location"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3628.7270765879!2d73.6833!3d24.5854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3967e5679e77f1a3%3A0x2c5e3e6d8c22f3a7!2sUdaipur%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1699000000000"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+          <div class="map-overlay-pin">
+            <div class="map-pin-dot"></div>
+            <div class="map-pin-pulse"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ SEPARATOR ░░ -->
+  <div class="separator">
+    <div class="separator-line"></div>
+    <svg class="separator-ornament" viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 20 Q30 5 60 20 Q90 35 120 20" stroke="var(--gold)" stroke-width="0.8" fill="none" opacity="0.7"/>
+      <circle cx="60" cy="20" r="3" fill="var(--gold)" opacity="0.9"/>
+    </svg>
+    <div class="separator-line"></div>
+  </div>
+
+  <!-- ░░ FOOTER ░░ -->
+  <footer class="footer" id="footer">
+    <div class="footer-bg"></div>
+    <div class="footer-particles"></div>
+    <div class="footer-content">
+      <div class="footer-monogram reveal-up">A &amp; P</div>
+      <p class="footer-quote reveal-up delay-1">
+        "Whatever our souls are made of,<br/>his and hers are the same."
+      </p>
+      <p class="footer-attr reveal-up delay-1">— Emily Brontë</p>
+      <div class="footer-date reveal-up delay-2">21 · 02 · 2026</div>
+      <div class="footer-divider reveal-up delay-2">
+        <span class="divider-line"></span>
+        <span class="divider-diamond">◆</span>
+        <span class="divider-line"></span>
+      </div>
+      <div class="footer-social reveal-up delay-3">
+        <a href="#" class="social-icon" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <circle cx="12" cy="12" r="5"/>
+            <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/>
+          </svg>
+        </a>
+        <a href="#" class="social-icon" aria-label="Pinterest">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M12 2C6.48 2 2 6.48 2 12c0 4.24 2.65 7.86 6.39 9.29-.09-.78-.17-1.99.04-2.85.18-.77 1.22-5.17 1.22-5.17s-.31-.63-.31-1.56c0-1.46.85-2.55 1.9-2.55.9 0 1.33.67 1.33 1.48 0 .9-.57 2.26-.87 3.52-.25 1.05.52 1.9 1.55 1.9 1.86 0 3.11-2.4 3.11-5.23 0-2.15-1.45-3.66-3.52-3.66-2.4 0-3.8 1.8-3.8 3.66 0 .73.28 1.5.63 1.93.07.08.08.15.06.24-.06.26-.2.82-.23.93-.04.15-.13.18-.3.11-1.11-.52-1.8-2.14-1.8-3.44 0-2.8 2.03-5.37 5.85-5.37 3.07 0 5.46 2.19 5.46 5.11 0 3.05-1.92 5.5-4.58 5.5-.89 0-1.73-.46-2.02-1.01l-.55 2.07c-.2.77-.74 1.73-1.1 2.32.83.26 1.7.4 2.61.4 5.52 0 10-4.48 10-10S17.52 2 12 2z"/>
+          </svg>
+        </a>
+        <a href="#" class="social-icon" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/>
+          </svg>
+        </a>
+      </div>
+      <p class="footer-hashtag reveal-up delay-3">#ArjunWedsPriya</p>
+      <p class="footer-copy reveal-up delay-4">Crafted with love · 2026 · All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
